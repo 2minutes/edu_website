@@ -1,0 +1,26 @@
+/*! Place your custom styles here */
+#cmbg{
+	background: #4a90e2
+}
+
+.color--primary-todo {
+    color: #e24949 !important;
+    vertical-align:middle;
+}
+
+.color--gray {
+    color: #BFBEBD !important;
+    vertical-align:middle;
+}
+
+.text-center-v {
+    vertical-align:middle;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+.leftul, .leftli {
+    margin: 0; padding: 0;
+}
