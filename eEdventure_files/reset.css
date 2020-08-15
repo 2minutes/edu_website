@@ -1,0 +1,246 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+/** @清除内外边距 **/
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+/* structural elements 结构元素 */
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+/* list elements 列表元素 */
+pre,
+/* text formatting elements 文本格式元素 */
+form,
+button,
+input,
+textarea,
+/* form elements 表单元素 */
+table,
+th,
+td{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b {
+    font-weight: normal;
+}
+
+body,
+button,
+input,
+select,
+textarea{
+    font: 14px/24px Arial, 'Microsoft Yahei', "宋体", sans-serif;
+}
+
+span,
+p {
+    font-family: 'Microsoft Yahei' !important;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+/*@h1, h2, h3, h4, h5, h6 { font-size: 100%; }*/
+em,
+i {
+    font-style: normal;
+}
+
+/* 将斜体扶正 */
+small {
+    font-size: 12px;
+}
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/** @重置列表元素 **/
+li {
+    list-style: none;
+}
+
+/** @重置文本格式元素 **/
+a {
+    text-decoration: none;
+    outline: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0077c0;
+}
+
+/** @重置表单元素 **/
+img {
+    border: 0;
+}
+
+/* img 搭车：让a链接里的 img 无边框  当没有正确路径时alt的文字大小*/
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    line-height: normal;
+}
+
+/* 使得表单元素在 ie 下能继承字体大小 */
+
+/** @重置表格元素 **/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    cursor: pointer;
+}
+
+/* @ie6 7 8(q) bug  */
+iframe {
+    display: block;
+}
+
+/* @清浮动 */
+.clearfix:after {
+    display: block;
+    content: " ";
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+    /* for IE6 IE7 */
+}
+
+/* @浮动 */
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fw {
+    font-weight: bold;
+}
+.bt-e1 {
+    border-top: 1px solid #e1e1e1;
+}
+.bgfff {
+    background-color: #fff;
+}
+.bgf2 {
+    background-color: #f2f2f2;
+}
+.bgf4 {
+    background-color: #f4f4f4;
+}
+.bgf7 {
+    background-color: #f7f7f7;
+}
+.bgf7faff{
+    background-color: #f7faff !important;
+}
+.bgfa{
+    background-color: #fafafa !important;
+}
+.bg0077c0{
+    background-color: #0077c0;
+}
+/* @转块 */
+.dis-block {
+    display: block;
+}
+
+.dis-inblock {
+    display: inline-block;
+}
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.fix-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+.position-relative{
+    position: relative;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: .65;
+}
+/* @首页轮播文字淡入 */
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+  
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
